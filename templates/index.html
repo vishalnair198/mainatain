@@ -1,0 +1,42 @@
+{% extends 'fhead.html'%} 
+{% load static %}
+{% block content %}
+
+<html>
+<head>
+    <title> ROTATE </title>
+    <link rel="stylesheet" href="{%static 'indi.css'%}">
+
+</head>
+<div class="d-flex justify-content-center mt-5">
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<body>
+
+    <section class="landing">
+      <h1><a href="{% url 'about'%}"style="text-decoration: none;">Rotaract Club</a></h1>
+      <img src="{% static 'Wheel.png'%}" class="main"/>
+      <section class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-text">
+                 
+                        <p class="animate-text">
+                            <span>Rotaract Club</span>
+                            <span>Rotaract PU</span>
+                            <span>Rotaract Dist</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{%static 'indi.js'%}"></script>
+</body>
+</html>
+
+{% endblock content %}
